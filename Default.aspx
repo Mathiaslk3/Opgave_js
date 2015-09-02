@@ -6,12 +6,15 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <asp:Button ID="Button_test" OnClientClick="sendClick();" runat="server" Text="Send" />
+                <asp:Button class="col-lg-offset-6" ID="Button_test" OnClientClick="sendClick();" runat="server" Text="Send" />
             </div>
         </div>
     </div>
 
     <script>
+        $('sendClick').click(function(event){
+            event.preventDefault();
+        });
         function sendClick() {
             
             sweetAlert({
