@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <!--------------Sweet Alert------------------>
+    <link href="sweetalert-master/dist/sweetalert.css" rel="stylesheet" />
+    <!------------------Bootstrap-------------->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.css" rel="stylesheet" />
+    <!----------------Custom---------------->
+    <link href="css/custom.css" rel="stylesheet" />
+    <!-------------------------------->
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="container">
+                <div class="row">
+                    <nav class="col-lg-12">
+                        <ul id="test" class="nav nav-pills">
+                            <li role="presentation"><a href="Default.aspx">Sweet Alert</a></li>
+                            <li role="presentation"><a href="#">Galleri</a></li>
+                            <li role="presentation"><a href="#">Validering</a></li>
+                            <li role="presentation"><a href="#">Login</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </div>
+    </form>
+</body>
+<!--------------Sweet Alert------------------>
+<script src="sweetalert-master/dist/sweetalert.min.js"></script>
+<script src="sweetalert-master/dist/sweetalert-dev.js"></script>
+<!----------------Jquery---------------->
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+<!------------------Bootstrap-------------->
+<script src="js/npm.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</html>
